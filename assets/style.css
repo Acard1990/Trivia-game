@@ -1,0 +1,13 @@
+* {
+  background: linear-gradient(to left, #fc4a1a, #f7b733 );
+  font-family: 'Orbitron', sans-serif;
+}
+.btn-custom {
+  background-color: #333 !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42d9fe", endColorstr="#00242d");
+  border-color: #00242d #00242d hsl(192, 100%, -4.5%);
+  color: #f7b733 !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.89);
+  -webkit-font-smoothing: antialiased;
+}

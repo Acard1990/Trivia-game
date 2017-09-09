@@ -104,8 +104,7 @@ $(document).ready(function() {
       $('#answerScreen').html('<div><p class="message">Correct!</p></div><div><p></p></div>');
 
       loadNext();
-    }
-    else {
+    } else {
 
       incorrectCount++;
 
@@ -164,13 +163,19 @@ $(document).ready(function() {
 
   function count() {
     intervalId = setInterval(questionTimer, 1000);
+
   }
 
   function questionTimer() {
     timePerQuestion--;
     $('#timeRemaining').html('<h3>' + timePerQuestion + '</h3>');
+    $('#timeRemaining').animate({opacity: 1}, 1000);
+    $('#timeRemaining').animate({opacity: .01}, 0);
+
   }
 
 
+
+  //=====================
   startGame();
 });
